@@ -1,0 +1,121 @@
+:root {
+    --primary-color: #174ee5;
+    --secondary-color: #f0f0f0;
+    --accent-color: #ffffff;
+    --text-color: #333;
+    --border-color: #ddd;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+}
+
+.card-header {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 20px;
+    background-color: var(--accent-color);
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.table th {
+    background-color: var(--secondary-color);
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--accent-color);
+}
+
+.btn-info {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--accent-color);
+}
+
+.btn-warning {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--accent-color);
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: var(--accent-color);
+}
+
+.btn {
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* Navbar Brand Styling */
+
+/* Responsiveness */
+  
+@media (max-width: 768px) {
+    .table {
+        font-size: 14px;
+    }
+  
+    .card-header h5 {
+        font-size: 16px;
+    }
+}
+  
+@media (max-width: 576px) {
+    .table {
+        font-size: 12px;
+    }
+  
+    .card-header h5 {
+        font-size: 14px;
+    }
+}
+  
